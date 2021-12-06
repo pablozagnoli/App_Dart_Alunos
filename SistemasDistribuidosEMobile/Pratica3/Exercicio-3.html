@@ -12,6 +12,20 @@
     <div style="background-color: rgb(220, 83, 20); height: 5200; width: 400px;">
         <p style="color: white; font-size: large; font-weight: 700;"></p>
 
+        <script>
+
+            var win = window.open('http://google.com/', '_blank');
+            if (win) {
+
+                win.focus();
+            } else {
+
+                alert('Please allow popups for this website');
+            }
+
+
+        </script>
+
         <div>
 
             <a style="font-size: 35px;">Nome:</a><textarea>Informe seu Nome</textarea>
@@ -27,7 +41,7 @@
         </div>
 
         <div>
-            <button style="background-color: wheat;">Enviar</button>
+            <button onclick="win" style="background-color: wheat;">Enviar</button>
         </div>
 
     </div>
